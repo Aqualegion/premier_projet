@@ -5,7 +5,7 @@ import Welcome from './Welcome.js';
 class App extends Component {
   render() {
     return (
-      <Welcome />
+      <Welcome name="Bonjour"/>
     );
   }
 }
