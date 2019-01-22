@@ -9,7 +9,10 @@ class Welcome extends Component{
     }
     render() {
         return(
-            <h1>Welcome {this.props.name}</h1>
+            <div>
+                <h1>Welcome {this.props.name}</h1>
+                <p>Mon compteur : {this.state.count}</p>
+            </div>
         );
     }
 }
