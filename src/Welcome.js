@@ -7,11 +7,26 @@ class Welcome extends Component{
             count: 0
         }
     }
+
+    addOne(){
+        this.setState({
+            count: this.state.count +1
+        })
+    }
+
+    removeOne(){
+        this.setState({
+            count: this.state.count -1
+        })
+    }
+
     render() {
         return(
             <div>
                 <h1>Welcome {this.props.name}</h1>
                 <p>Mon compteur : {this.state.count}</p>
+                <button onClick={()=>this.addOne()}>Ajouter</button>
+                <button onClick={this.removeOne.bind(this)}>Enlever</button>
             </div>
         );
     }
